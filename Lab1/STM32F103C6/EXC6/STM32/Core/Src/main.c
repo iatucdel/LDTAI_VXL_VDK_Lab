@@ -88,12 +88,12 @@ void clearAllClock(){
  }
 void setNumberOnClock(int num) {
     if (num >= 0 && num < 12) {
-        HAL_GPIO_WritePin(LED_PORT, LED_PINS[num], RESET);
+        HAL_GPIO_WritePin(GPIOA, LED_PINS[num], RESET);
     }
 }
 void clearNumberOnClock(int num) {
     if (num >= 0 && num < 12) {
-        HAL_GPIO_WritePin(LED_PORT, LED_PINS[num], SET);
+        HAL_GPIO_WritePin(GPIOA, LED_PINS[num], SET);
     }
 }
 

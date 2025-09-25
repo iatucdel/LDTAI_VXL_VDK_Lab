@@ -130,8 +130,8 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
   int sec_cnt = 0;
-  int min_cnt = 50*60;
-  uint32_t hour_cnt = 6*3600;
+  int min_cnt = 50*60 +sec_cnt;
+  uint32_t hour_cnt = 6*3600 + min_cnt;
   clearAllClock();
   /* USER CODE END 2 */
 
@@ -149,7 +149,7 @@ int main(void)
 	  setNumberOnClock(sec_cnt/5);
 	  setNumberOnClock(min_cnt/300);
 	  setNumberOnClock(hour_cnt/3600);
-	  HAL_Delay(200);
+	  HAL_Delay(20);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
