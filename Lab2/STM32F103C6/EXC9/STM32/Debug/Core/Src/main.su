@@ -1,0 +1,8 @@
+../Core/Src/main.c:76:6:display7SEG	16	static
+../Core/Src/main.c:99:6:updateClockBuffer	4	static
+../Core/Src/main.c:106:6:update7SEG	16	static
+../Core/Src/main.c:129:6:updateLEDMatrix	24	static
+../Core/Src/main.c:167:6:mat_tran	16	static
+../Core/Src/main.c:189:5:main	24	static
+../Core/Src/main.c:286:6:SystemClock_Config	72	static
+../Core/Src/main.c:326:6:Error_Handler	4	static,ignoring_inline_asm

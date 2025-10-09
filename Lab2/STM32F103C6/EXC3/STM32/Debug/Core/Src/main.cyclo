@@ -1,0 +1,6 @@
+../Core/Src/main.c:76:6:display7SEG	1
+../Core/Src/main.c:97:7:update7SEG	5
+../Core/Src/main.c:115:7:HAL_TIM_PeriodElapsedCallback	9
+../Core/Src/main.c:162:5:main	1
+../Core/Src/main.c:212:6:SystemClock_Config	3
+../Core/Src/main.c:252:6:Error_Handler	1

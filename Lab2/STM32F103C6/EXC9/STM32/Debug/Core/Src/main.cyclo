@@ -1,0 +1,8 @@
+../Core/Src/main.c:76:6:display7SEG	1
+../Core/Src/main.c:99:6:updateClockBuffer	1
+../Core/Src/main.c:106:6:update7SEG	5
+../Core/Src/main.c:129:6:updateLEDMatrix	9
+../Core/Src/main.c:167:6:mat_tran	1
+../Core/Src/main.c:189:5:main	10
+../Core/Src/main.c:286:6:SystemClock_Config	3
+../Core/Src/main.c:326:6:Error_Handler	1

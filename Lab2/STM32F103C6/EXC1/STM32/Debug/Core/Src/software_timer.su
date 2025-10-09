@@ -1,0 +1,7 @@
+../Core/Src/software_timer.c:6:6:timer_arr_add	24	static
+../Core/Src/software_timer.c:21:10:timer_arr_pop	32	static
+../Core/Src/software_timer.c:33:6:Check_timer	4	static
+../Core/Src/software_timer.c:38:6:timer_isr	4	static
+../Core/Src/software_timer.c:41:9:TimerExpired	16	static
+../Core/Src/software_timer.c:48:6:set_timer	24	static
+../Core/Src/software_timer.c:55:6:set_timer_init	24	static
