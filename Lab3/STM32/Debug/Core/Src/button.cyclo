@@ -1,0 +1,4 @@
+../Core/Src/button.c:15:6:button_reading	6
+../Core/Src/button.c:38:9:is_button_pressed	2
+../Core/Src/button.c:42:9:is_button_pressed_one	4
+../Core/Src/button.c:48:9:is_button_pressed_500ms	2

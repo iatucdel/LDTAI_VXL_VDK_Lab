@@ -1,0 +1,14 @@
+../Core/Src/inout_driver.c:12:9:read_long_pressed	2
+../Core/Src/inout_driver.c:20:6:main_fsm	47
+../Core/Src/inout_driver.c:160:6:trafic_led_YELLOW	1
+../Core/Src/inout_driver.c:165:6:trafic_led_RED	1
+../Core/Src/inout_driver.c:170:6:trafic_led_GREEN	1
+../Core/Src/inout_driver.c:177:6:trafic_led_GR	1
+../Core/Src/inout_driver.c:182:6:trafic_led_YR	1
+../Core/Src/inout_driver.c:188:6:trafic_led_RG	1
+../Core/Src/inout_driver.c:193:6:trafic_led_RY	1
+../Core/Src/inout_driver.c:199:6:turn_off_seg1	1
+../Core/Src/inout_driver.c:202:6:turn_off_seg2	1
+../Core/Src/inout_driver.c:207:6:led_fsm	26
+../Core/Src/inout_driver.c:359:6:display_seg1	3
+../Core/Src/inout_driver.c:382:6:display_seg2	3
