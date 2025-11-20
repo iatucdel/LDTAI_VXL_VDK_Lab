@@ -91,6 +91,8 @@ Discarded input sections
  .text          0x00000000        0x0 ./Core/Src/main.o
  .data          0x00000000        0x0 ./Core/Src/main.o
  .bss           0x00000000        0x0 ./Core/Src/main.o
+ .data.LED_PORT
+                0x00000000        0x4 ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
@@ -2186,52 +2188,50 @@ LOAD C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe
 .rel.dyn        0x080012d8        0x0
  .rel.iplt      0x080012d8        0x0 C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.data           0x20000000       0x28 load address 0x080012d8
+.data           0x20000000       0x24 load address 0x080012d8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
  *(.data*)
- .data.LED_PORT
-                0x20000000        0x4 ./Core/Src/main.o
-                0x20000000                LED_PORT
  .data.LED_PINS
-                0x20000004       0x18 ./Core/Src/main.o
-                0x20000004                LED_PINS
+                0x20000000       0x18 ./Core/Src/main.o
+                0x20000000                LED_PINS
  .data.SystemCoreClock
-                0x2000001c        0x4 ./Core/Src/system_stm32f1xx.o
-                0x2000001c                SystemCoreClock
+                0x20000018        0x4 ./Core/Src/system_stm32f1xx.o
+                0x20000018                SystemCoreClock
  .data.uwTickPrio
-                0x20000020        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x20000020                uwTickPrio
+                0x2000001c        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x2000001c                uwTickPrio
  .data.uwTickFreq
-                0x20000024        0x1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x20000024                uwTickFreq
+                0x20000020        0x1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x20000020                uwTickFreq
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000028                        . = ALIGN (0x4)
- *fill*         0x20000025        0x3 
-                0x20000028                        _edata = .
+                0x20000024                        . = ALIGN (0x4)
+ *fill*         0x20000021        0x3 
+                0x20000024                        _edata = .
 
-.igot.plt       0x20000028        0x0 load address 0x08001300
- .igot.plt      0x20000028        0x0 C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x20000028                        . = ALIGN (0x4)
+.igot.plt       0x20000024        0x0 load address 0x080012fc
+ .igot.plt      0x20000024        0x0 C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x20000024                        . = ALIGN (0x4)
 
-.bss            0x20000028       0x20 load address 0x08001300
-                0x20000028                        _sbss = .
-                0x20000028                        __bss_start__ = _sbss
+.bss            0x20000024       0x20 load address 0x080012fc
+                0x20000024                        _sbss = .
+                0x20000024                        __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000028       0x1c C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
+ .bss           0x20000024       0x1c C:/Users/taiko/App/en.st-stm32cubeide_1.17.0_23558_20241125_2245_x86_64.exe/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.bss*)
- .bss.uwTick    0x20000044        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x20000044                uwTick
+ .bss.uwTick    0x20000040        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x20000040                uwTick
  *(COMMON)
-                0x20000048                        . = ALIGN (0x4)
-                0x20000048                        _ebss = .
-                0x20000048                        __bss_end__ = _ebss
+                0x20000044                        . = ALIGN (0x4)
+                0x20000044                        _ebss = .
+                0x20000044                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000048      0x600 load address 0x08001300
+                0x20000044      0x604 load address 0x080012fc
                 0x20000048                        . = ALIGN (0x8)
+ *fill*         0x20000044        0x4 
                 [!provide]                        PROVIDE (end = .)
                 0x20000048                        PROVIDE (_end = .)
                 0x20000248                        . = (. + _Min_Heap_Size)

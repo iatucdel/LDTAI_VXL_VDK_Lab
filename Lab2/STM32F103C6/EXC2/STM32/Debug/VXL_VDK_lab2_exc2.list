@@ -228,106 +228,106 @@ void display7SEG(int num,int led){
  800022e:	4619      	mov	r1, r3
  8000230:	4835      	ldr	r0, [pc, #212]	@ (8000308 <display7SEG+0x114>)
  8000232:	f000 fd1b 	bl	8000c6c <HAL_GPIO_WritePin>
-	HAL_GPIO_WritePin(EN0_GPIO_Port, EN_PIN[led], RESET);
- 8000236:	4a33      	ldr	r2, [pc, #204]	@ (8000304 <display7SEG+0x110>)
- 8000238:	683b      	ldr	r3, [r7, #0]
- 800023a:	f832 3013 	ldrh.w	r3, [r2, r3, lsl #1]
- 800023e:	2200      	movs	r2, #0
- 8000240:	4619      	mov	r1, r3
- 8000242:	4831      	ldr	r0, [pc, #196]	@ (8000308 <display7SEG+0x114>)
- 8000244:	f000 fd12 	bl	8000c6c <HAL_GPIO_WritePin>
-
 
 	HAL_GPIO_WritePin(seg_a_GPIO_Port, seg_a_Pin, led7_table[num][0]);
- 8000248:	4930      	ldr	r1, [pc, #192]	@ (800030c <display7SEG+0x118>)
- 800024a:	687a      	ldr	r2, [r7, #4]
- 800024c:	4613      	mov	r3, r2
- 800024e:	00db      	lsls	r3, r3, #3
- 8000250:	1a9b      	subs	r3, r3, r2
- 8000252:	440b      	add	r3, r1
- 8000254:	781b      	ldrb	r3, [r3, #0]
- 8000256:	461a      	mov	r2, r3
- 8000258:	2101      	movs	r1, #1
- 800025a:	482d      	ldr	r0, [pc, #180]	@ (8000310 <display7SEG+0x11c>)
- 800025c:	f000 fd06 	bl	8000c6c <HAL_GPIO_WritePin>
+ 8000236:	4935      	ldr	r1, [pc, #212]	@ (800030c <display7SEG+0x118>)
+ 8000238:	687a      	ldr	r2, [r7, #4]
+ 800023a:	4613      	mov	r3, r2
+ 800023c:	00db      	lsls	r3, r3, #3
+ 800023e:	1a9b      	subs	r3, r3, r2
+ 8000240:	440b      	add	r3, r1
+ 8000242:	781b      	ldrb	r3, [r3, #0]
+ 8000244:	461a      	mov	r2, r3
+ 8000246:	2101      	movs	r1, #1
+ 8000248:	4831      	ldr	r0, [pc, #196]	@ (8000310 <display7SEG+0x11c>)
+ 800024a:	f000 fd0f 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_b_GPIO_Port, seg_b_Pin, led7_table[num][1]);
- 8000260:	492a      	ldr	r1, [pc, #168]	@ (800030c <display7SEG+0x118>)
- 8000262:	687a      	ldr	r2, [r7, #4]
- 8000264:	4613      	mov	r3, r2
- 8000266:	00db      	lsls	r3, r3, #3
- 8000268:	1a9b      	subs	r3, r3, r2
- 800026a:	440b      	add	r3, r1
- 800026c:	3301      	adds	r3, #1
- 800026e:	781b      	ldrb	r3, [r3, #0]
- 8000270:	461a      	mov	r2, r3
- 8000272:	2102      	movs	r1, #2
- 8000274:	4826      	ldr	r0, [pc, #152]	@ (8000310 <display7SEG+0x11c>)
- 8000276:	f000 fcf9 	bl	8000c6c <HAL_GPIO_WritePin>
+ 800024e:	492f      	ldr	r1, [pc, #188]	@ (800030c <display7SEG+0x118>)
+ 8000250:	687a      	ldr	r2, [r7, #4]
+ 8000252:	4613      	mov	r3, r2
+ 8000254:	00db      	lsls	r3, r3, #3
+ 8000256:	1a9b      	subs	r3, r3, r2
+ 8000258:	440b      	add	r3, r1
+ 800025a:	3301      	adds	r3, #1
+ 800025c:	781b      	ldrb	r3, [r3, #0]
+ 800025e:	461a      	mov	r2, r3
+ 8000260:	2102      	movs	r1, #2
+ 8000262:	482b      	ldr	r0, [pc, #172]	@ (8000310 <display7SEG+0x11c>)
+ 8000264:	f000 fd02 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_c_GPIO_Port, seg_c_Pin, led7_table[num][2]);
- 800027a:	4924      	ldr	r1, [pc, #144]	@ (800030c <display7SEG+0x118>)
- 800027c:	687a      	ldr	r2, [r7, #4]
- 800027e:	4613      	mov	r3, r2
- 8000280:	00db      	lsls	r3, r3, #3
- 8000282:	1a9b      	subs	r3, r3, r2
- 8000284:	440b      	add	r3, r1
- 8000286:	3302      	adds	r3, #2
- 8000288:	781b      	ldrb	r3, [r3, #0]
- 800028a:	461a      	mov	r2, r3
- 800028c:	2104      	movs	r1, #4
- 800028e:	4820      	ldr	r0, [pc, #128]	@ (8000310 <display7SEG+0x11c>)
- 8000290:	f000 fcec 	bl	8000c6c <HAL_GPIO_WritePin>
+ 8000268:	4928      	ldr	r1, [pc, #160]	@ (800030c <display7SEG+0x118>)
+ 800026a:	687a      	ldr	r2, [r7, #4]
+ 800026c:	4613      	mov	r3, r2
+ 800026e:	00db      	lsls	r3, r3, #3
+ 8000270:	1a9b      	subs	r3, r3, r2
+ 8000272:	440b      	add	r3, r1
+ 8000274:	3302      	adds	r3, #2
+ 8000276:	781b      	ldrb	r3, [r3, #0]
+ 8000278:	461a      	mov	r2, r3
+ 800027a:	2104      	movs	r1, #4
+ 800027c:	4824      	ldr	r0, [pc, #144]	@ (8000310 <display7SEG+0x11c>)
+ 800027e:	f000 fcf5 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_g_GPIO_Port, seg_d_Pin, led7_table[num][3]);
- 8000294:	491d      	ldr	r1, [pc, #116]	@ (800030c <display7SEG+0x118>)
- 8000296:	687a      	ldr	r2, [r7, #4]
- 8000298:	4613      	mov	r3, r2
- 800029a:	00db      	lsls	r3, r3, #3
- 800029c:	1a9b      	subs	r3, r3, r2
- 800029e:	440b      	add	r3, r1
- 80002a0:	3303      	adds	r3, #3
- 80002a2:	781b      	ldrb	r3, [r3, #0]
- 80002a4:	461a      	mov	r2, r3
- 80002a6:	2108      	movs	r1, #8
- 80002a8:	4819      	ldr	r0, [pc, #100]	@ (8000310 <display7SEG+0x11c>)
- 80002aa:	f000 fcdf 	bl	8000c6c <HAL_GPIO_WritePin>
+ 8000282:	4922      	ldr	r1, [pc, #136]	@ (800030c <display7SEG+0x118>)
+ 8000284:	687a      	ldr	r2, [r7, #4]
+ 8000286:	4613      	mov	r3, r2
+ 8000288:	00db      	lsls	r3, r3, #3
+ 800028a:	1a9b      	subs	r3, r3, r2
+ 800028c:	440b      	add	r3, r1
+ 800028e:	3303      	adds	r3, #3
+ 8000290:	781b      	ldrb	r3, [r3, #0]
+ 8000292:	461a      	mov	r2, r3
+ 8000294:	2108      	movs	r1, #8
+ 8000296:	481e      	ldr	r0, [pc, #120]	@ (8000310 <display7SEG+0x11c>)
+ 8000298:	f000 fce8 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_f_GPIO_Port, seg_e_Pin, led7_table[num][4]);
- 80002ae:	4917      	ldr	r1, [pc, #92]	@ (800030c <display7SEG+0x118>)
- 80002b0:	687a      	ldr	r2, [r7, #4]
- 80002b2:	4613      	mov	r3, r2
- 80002b4:	00db      	lsls	r3, r3, #3
- 80002b6:	1a9b      	subs	r3, r3, r2
- 80002b8:	440b      	add	r3, r1
- 80002ba:	3304      	adds	r3, #4
- 80002bc:	781b      	ldrb	r3, [r3, #0]
- 80002be:	461a      	mov	r2, r3
- 80002c0:	2110      	movs	r1, #16
- 80002c2:	4813      	ldr	r0, [pc, #76]	@ (8000310 <display7SEG+0x11c>)
- 80002c4:	f000 fcd2 	bl	8000c6c <HAL_GPIO_WritePin>
+ 800029c:	491b      	ldr	r1, [pc, #108]	@ (800030c <display7SEG+0x118>)
+ 800029e:	687a      	ldr	r2, [r7, #4]
+ 80002a0:	4613      	mov	r3, r2
+ 80002a2:	00db      	lsls	r3, r3, #3
+ 80002a4:	1a9b      	subs	r3, r3, r2
+ 80002a6:	440b      	add	r3, r1
+ 80002a8:	3304      	adds	r3, #4
+ 80002aa:	781b      	ldrb	r3, [r3, #0]
+ 80002ac:	461a      	mov	r2, r3
+ 80002ae:	2110      	movs	r1, #16
+ 80002b0:	4817      	ldr	r0, [pc, #92]	@ (8000310 <display7SEG+0x11c>)
+ 80002b2:	f000 fcdb 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_e_GPIO_Port, seg_f_Pin, led7_table[num][5]);
- 80002c8:	4910      	ldr	r1, [pc, #64]	@ (800030c <display7SEG+0x118>)
- 80002ca:	687a      	ldr	r2, [r7, #4]
- 80002cc:	4613      	mov	r3, r2
- 80002ce:	00db      	lsls	r3, r3, #3
- 80002d0:	1a9b      	subs	r3, r3, r2
- 80002d2:	440b      	add	r3, r1
- 80002d4:	3305      	adds	r3, #5
- 80002d6:	781b      	ldrb	r3, [r3, #0]
- 80002d8:	461a      	mov	r2, r3
- 80002da:	2120      	movs	r1, #32
- 80002dc:	480c      	ldr	r0, [pc, #48]	@ (8000310 <display7SEG+0x11c>)
- 80002de:	f000 fcc5 	bl	8000c6c <HAL_GPIO_WritePin>
+ 80002b6:	4915      	ldr	r1, [pc, #84]	@ (800030c <display7SEG+0x118>)
+ 80002b8:	687a      	ldr	r2, [r7, #4]
+ 80002ba:	4613      	mov	r3, r2
+ 80002bc:	00db      	lsls	r3, r3, #3
+ 80002be:	1a9b      	subs	r3, r3, r2
+ 80002c0:	440b      	add	r3, r1
+ 80002c2:	3305      	adds	r3, #5
+ 80002c4:	781b      	ldrb	r3, [r3, #0]
+ 80002c6:	461a      	mov	r2, r3
+ 80002c8:	2120      	movs	r1, #32
+ 80002ca:	4811      	ldr	r0, [pc, #68]	@ (8000310 <display7SEG+0x11c>)
+ 80002cc:	f000 fcce 	bl	8000c6c <HAL_GPIO_WritePin>
 	HAL_GPIO_WritePin(seg_d_GPIO_Port, seg_g_Pin, led7_table[num][6]);
- 80002e2:	490a      	ldr	r1, [pc, #40]	@ (800030c <display7SEG+0x118>)
- 80002e4:	687a      	ldr	r2, [r7, #4]
- 80002e6:	4613      	mov	r3, r2
- 80002e8:	00db      	lsls	r3, r3, #3
- 80002ea:	1a9b      	subs	r3, r3, r2
- 80002ec:	440b      	add	r3, r1
- 80002ee:	3306      	adds	r3, #6
- 80002f0:	781b      	ldrb	r3, [r3, #0]
- 80002f2:	461a      	mov	r2, r3
- 80002f4:	2140      	movs	r1, #64	@ 0x40
- 80002f6:	4806      	ldr	r0, [pc, #24]	@ (8000310 <display7SEG+0x11c>)
+ 80002d0:	490e      	ldr	r1, [pc, #56]	@ (800030c <display7SEG+0x118>)
+ 80002d2:	687a      	ldr	r2, [r7, #4]
+ 80002d4:	4613      	mov	r3, r2
+ 80002d6:	00db      	lsls	r3, r3, #3
+ 80002d8:	1a9b      	subs	r3, r3, r2
+ 80002da:	440b      	add	r3, r1
+ 80002dc:	3306      	adds	r3, #6
+ 80002de:	781b      	ldrb	r3, [r3, #0]
+ 80002e0:	461a      	mov	r2, r3
+ 80002e2:	2140      	movs	r1, #64	@ 0x40
+ 80002e4:	480a      	ldr	r0, [pc, #40]	@ (8000310 <display7SEG+0x11c>)
+ 80002e6:	f000 fcc1 	bl	8000c6c <HAL_GPIO_WritePin>
+	HAL_GPIO_WritePin(EN0_GPIO_Port, EN_PIN[led], RESET);
+ 80002ea:	4a06      	ldr	r2, [pc, #24]	@ (8000304 <display7SEG+0x110>)
+ 80002ec:	683b      	ldr	r3, [r7, #0]
+ 80002ee:	f832 3013 	ldrh.w	r3, [r2, r3, lsl #1]
+ 80002f2:	2200      	movs	r2, #0
+ 80002f4:	4619      	mov	r1, r3
+ 80002f6:	4804      	ldr	r0, [pc, #16]	@ (8000308 <display7SEG+0x114>)
  80002f8:	f000 fcb8 	bl	8000c6c <HAL_GPIO_WritePin>
+
 }
  80002fc:	bf00      	nop
  80002fe:	3708      	adds	r7, #8
