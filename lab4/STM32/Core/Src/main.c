@@ -115,7 +115,7 @@ int main(void)
 //  SCH_Add_Task(read_long_pressed_0, 29, 250);
 //  SCH_Add_Task(read_long_pressed_1, 31, 250);
 //  SCH_Add_Task(read_long_pressed_2, 37, 250);
-
+  SCH_Init();
   SCH_Add_Task(Toggle_LED_RED, 50, 0);
   SCH_Add_Task(main_fsm, 6, 2);
   SCH_Add_Task(led_fsm, 7, 4);

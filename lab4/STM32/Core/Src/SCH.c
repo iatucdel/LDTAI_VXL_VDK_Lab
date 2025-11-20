@@ -28,8 +28,6 @@ void SCH_Init(void){
 }
 
 void SCH_Update(void){
-	if(Task_cnt == 0) return;
-
 	--SCH_tasks_G[0].Delay;
 
 }
