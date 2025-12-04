@@ -125,10 +125,6 @@ int main(void)
   SCH_Add_Task(read_long_pressed_0, 3, 25);
   SCH_Add_Task(read_long_pressed_1, 4, 25);
   SCH_Add_Task(read_long_pressed_2, 5, 25);
-
-
-
-
   HAL_TIM_Base_Start_IT(&htim2);
 
   /* USER CODE END 2 */

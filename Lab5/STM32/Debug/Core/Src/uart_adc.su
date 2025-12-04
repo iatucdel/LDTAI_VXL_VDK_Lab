@@ -1,0 +1,4 @@
+../Core/Src/uart_adc.c:37:6:get_ADC_value	8	static
+../Core/Src/uart_adc.c:41:6:command_parser_fsm	4	static
+../Core/Src/uart_adc.c:78:6:uart_communiation_fsm	16	static
+../Core/Src/uart_adc.c:103:6:HAL_UART_RxCpltCallback	16	static

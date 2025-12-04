@@ -29,6 +29,7 @@ void SCH_Init(void){
 }
 
 void SCH_Update(void){
+	if(Task_cnt <=0) return;
 	--SCH_tasks_G[0].Delay;
 
 }
@@ -84,7 +85,7 @@ unsigned char SCH_Delete_Task(uint32_t TASK_ID){
 void SCH_Dispatch_Tasks(void){
 	if(Task_cnt <= 0) return ;
 	int num_of_task = 0;
-	while(SCH_tasks_G[0].Delay <= 0){
+	if(SCH_tasks_G[0].Delay <= 0){
 
 		sTask temp = SCH_tasks_G[0];
 		SCH_tasks_G[1].Delay += temp.Delay;
@@ -109,6 +110,7 @@ void SCH_Dispatch_Tasks(void){
 		++num_of_task;
 	}
 	for(int i = 0;i < num_of_task;++i){
+		if (task_arr[i] != 0)
 		(*task_arr[i])();
 	}
 
